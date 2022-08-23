@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html id="div">
+<html>
     <head>
         <title>raye</title>
         <style type="text/css">
             #div1{font-family: 'Times New Roman', Times, serif;color: paleturquoise;text-transform: capitalize;}
             #div2{font-family: 'Times New Roman', Times, serif;color: gold;}
-            #div3{font-family: "宋体"; font-size: 30px;font-weight: bold;font-style: italic;color: aquamarine;}
+            #div3{font-size: 30px;font-weight: bold;font-style: italic;color: aquamarine;}
             img
             {
                 width:  60px;
@@ -18,6 +18,10 @@
                 background-attachment: scroll;
                 cursor: pointer;
             }
+            #pos{
+                position: absolute;
+                top: 30px;
+                right: 10px;}
         </style>
         <script>
             window.onload=function(){
@@ -29,12 +33,14 @@
                 }
         </script>
     </head>
-    <body>
+    <body id="div">
         <center>
             <div id="div1"><h1>welcome to my blog!</h1></div>
             <p><div id="div2"><i>hello,my name is raye,nice to meet you.</i></div></p>
-            <img src="img/cat.jpg"/>
+           <div id="pos"> 
+           <a href="mine.html"><img src="img/cat.jpg"/></a>
             <div id="div3"><a href="main.html">我的主页</a></div>
+          </div>
         </center>
     </body>
 </html>
