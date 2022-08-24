@@ -6,6 +6,7 @@
             #div1{font-family: 'Times New Roman', Times, serif;color: paleturquoise;text-transform: capitalize;}
             #div2{font-family: 'Times New Roman', Times, serif;color: gold;}
             #div3{font-size: 30px;font-weight: bold;font-style: italic;color: aquamarine;}
+            #div4{color: fuchsia;}
             img
             {
                 width:  60px;
@@ -53,14 +54,14 @@
             var minute=d.getMinutes();
             var second=d.getSeconds();
             document.write("今天是"+myYear+"年"+myMonth+"月"+myDay+"日"+hour+":"+minute+":"+second+"<br/>")
-            var time=d.getHours();
-            if(time<10){
+            var hour=d.getHours();
+            if(hour<10){
             document.write("早上好！");
                 }
-                else if(time>=10&&time<13){
+                else if(hour>=10&hour<13){
                     document.write("中午好！");
                 }
-                else if(time>=13&&time<18){
+                else if(hour>=13&&hour<18){
                 document.write("下午好！")
             }
                 else{
