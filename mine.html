@@ -10,7 +10,10 @@
             var myDay=d.getDate();
             var myMonth=d.getMonth()+1;
             var myYear=d.getFullYear();
-            document.write("今天是"+myYear+"年"+myMonth+"月"+myDay+"日"+"<br/>")
+            var hour=d.getHours();
+            var minute=d.getMinutes();
+            var second=d.getSeconds();
+            document.write("今天是"+myYear+"年"+myMonth+"月"+myDay+"日"+hour+":"+minute+":"+second+":"+"<br/>")
             var time=d.getHours();
             if(time<10){
             document.write("早上好！");
