@@ -2,6 +2,12 @@
 <html>
     <head>
         <title></title>
+        <script>
+            window.onbeforeunload=function(event){
+                var e=event || window.event;
+                    e.returnValue="欢迎下次再来喔！";
+                    }
+        </script>
     </head>
     <body>
         <form>
