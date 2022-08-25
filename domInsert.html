@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>喜欢的角色</title>
+        <script>
+            window.onload=function(){
+                var oBtn=document.getElementById("btn");
+                oBtn.onclick=function(){
+                    var oUl=document.getElementById("list");
+                    var oTxt=document.getElementById("txt");
+                    var textNode=document.createTextNode(oTxt.value);
+                    var oLi=document.createElement("li");
+                    oLi.appendChild(textNode);
+                    oUl.appendChild(oLi);
+                    };
+            }
+        </script>
+    </head>
+    <body>
+        <ul id="list">
+            <li>胡桃</li>
+            <li>钟离</li>
+            <li>可莉</li>
+        </ul>
+        <input id="txt" type="text"/>
+        <input id="btn"type="button"value="插入"/>
+    </body>
+</html>

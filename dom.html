@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            img{
+            width: 200px;
+        height: 350px;}
+        </style>
+        <script>
+            window.onload=function(){
+                var oDiv=document.getElementById("div1");
+                oDiv.style.color="red";
+                var oUl=document.getElementById("list");
+                var oLi=oUl.getElementsByTagName("li");
+                oLi[0].style.color="blue";
+                var oLi01=document.getElementsByClassName("select01")
+                oLi01[0].style.color="yellow";
+                var oLi02=document.querySelectorAll(".select01")
+                oLi02[1].style.color="#C0C0C0";
+                var oInput=document.getElementsByName("status");
+                oInput[0].checked=true;
+                var oImg=document.createElement('img');
+                oImg.className="pic";
+                oImg.src="img/ht02.jpg";
+                oImg.style.border="1px solid sliver";
+                document.body.appendChild(oImg);
+                }
+        </script>
+    </head>
+    <body>
+        <div id="div1">JavaScript</div>
+        <ul id="list">
+            <li>全职高手</li>
+            <li class="select01">我有一座恐怖屋</li>
+            <li class="select01">黎明之剑</li>
+            <li class="select01">希灵</li>
+            <li class="select01">神话</li>
+        </ul>
+        你的最高学历：
+        <label><input type="radio"name="status" value="本科"/>本科</label>
+        <label><input type="radio"name="status" value="硕士"/>硕士</label>
+        <label><input type="radio"name="status" value="博士"/>博士</label><br/>
+    </body>
+</html>
