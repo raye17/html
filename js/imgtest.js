@@ -65,36 +65,4 @@
                         //鼠标松开
                         this.onmousemove = null;//清除鼠标移动
                   }
-                  function preloadImg(){
-                    var loadImg = []; // 创建一个数组，
-                    // 通过push方法，将图片路径添加进数组
-                    loadImg.push('../img/1.jpg');
-                    loadImg.push('../img/2.jpg');
-                    loadImg.push('../img/3.jpg');
-                    loadImg.push('../img/4.jpg');
-                    loadImg.push('../img/5.jpg');
-                    loadImg.push('../img/6.jpg');
-                    loadImg.push('../img/7.jpg');
-                    loadImg.push('../img/8.jpg');
-                    loadImg.push('../img/9.jpg');
-                    loadImg.push('../img/10.jpg');
-                    loadImg.push('../img/11.jpg');
-                    loadImg.push('../img/12.jpg');
-                    loadImg.push('../img/13.jpg');
-                    loadImg.push('../img/14.jpg');
-                    loadImg.push('../img/ht01.jpg');
-                    loadImg.push('../img/ht02.jpg');
-                    loadImg.push('../img/ll01.jpg');
-                    loadImg.push('../img/ll02.jpg');
-                    //遍历数组    执行上述步骤1和步骤2
-                    for(var i=0;i<loadImg.length;i++){
-                    var newImg = new Image();
-                       newImg.src = loadImg[i];
-                    }
-                }
-                //步骤3
-                window.addEventListener('load',function(){
-                //调用预加载函数
-                    preloadImg()
-                })
             }
